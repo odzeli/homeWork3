@@ -60,7 +60,7 @@ namespace homeWork3
 
         private Exception ArgumentException(string v)
         {
-            throw new InvalidOperationException();
+            throw new ArgumentException(v);
         }
     }
 }

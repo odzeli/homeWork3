@@ -14,27 +14,28 @@ namespace homeWork3
         {
             try
             {
-            Console.Write("Введите числитель 1: ");
-            int chislitel = int.Parse(Console.ReadLine());
-            Console.Write("Введите знаменатель 1: ");
-            int znamenatel = int.Parse(Console.ReadLine());
-            Fraction drob1 = new Fraction(chislitel, znamenatel);
-            Console.Write("Введите числитель 2: ");
-            int chislitel2 = int.Parse(Console.ReadLine());
-            Console.Write("Введите знаменатель 2: ");
-            int znamenatel2 = int.Parse(Console.ReadLine());
-            Fraction drob2 = new Fraction(chislitel2, znamenatel2);
+                Console.Write("Введите числитель 1: ");
+                int chislitel = int.Parse(Console.ReadLine());
+                Console.Write("Введите знаменатель 1: ");
+                int znamenatel = int.Parse(Console.ReadLine());
+                Fraction drob1 = new Fraction(chislitel, znamenatel);
+                Console.Write("Введите числитель 2: ");
+                int chislitel2 = int.Parse(Console.ReadLine());
+                Console.Write("Введите знаменатель 2: ");
+                int znamenatel2 = int.Parse(Console.ReadLine());
+                Fraction drob2 = new Fraction(chislitel2, znamenatel2);
 
-            var result = Fraction.SumDrob(drob1, drob2);
-            Console.WriteLine($"Результат суммы: {result.Chislitel}/{result.Znamenatel}");
-            result = Fraction.SubstractFraction(drob1, drob2);
-            Console.WriteLine($"Результат вычитания: {result.Chislitel}/{result.Znamenatel}");
-            result = Fraction.MultiplyFraction(drob1, drob2);
-            Console.WriteLine($"Результат умножения: {result.Chislitel}/{result.Znamenatel}");
-            result = Fraction.DivisionFraction(drob1, drob2);
-            Console.WriteLine($"Результат деления: {result.Chislitel}/{result.Znamenatel}");
-            Console.ReadKey();
-            } catch(Exception e)
+                var result = Fraction.SumDrob(drob1, drob2);
+                Console.WriteLine($"Результат суммы: {result.Chislitel}/{result.Znamenatel}");
+                result = Fraction.SubstractFraction(drob1, drob2);
+                Console.WriteLine($"Результат вычитания: {result.Chislitel}/{result.Znamenatel}");
+                result = Fraction.MultiplyFraction(drob1, drob2);
+                Console.WriteLine($"Результат умножения: {result.Chislitel}/{result.Znamenatel}");
+                result = Fraction.DivisionFraction(drob1, drob2);
+                Console.WriteLine($"Результат деления: {result.Chislitel}/{result.Znamenatel}");
+                Console.ReadKey();
+            }
+            catch (Exception e)
             {
                 Console.WriteLine(e.Message);
                 Console.ReadKey();
